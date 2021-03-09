@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'exercicio3';
+
+  courses = [
+    { title: 'Análise de Sistemas', workload: 6400 },
+    { title: 'Banco de Dados', workload: 5000 },
+  ]
+
+  onAddCourse (course) {
+    this.courses.push(course)
+  }
+
 }
